@@ -248,7 +248,7 @@
                   </div>
                   <!-- ./card-body -->
                   <div class="card-body">
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-12">
                             <form class="form-inline">
                                 <label>Jabatan : </label>
@@ -283,7 +283,7 @@
                                 <button class="btn btn-info">Cari</button>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                     <table class="table table-bordered" id="tableBiodata">
                       <thead>
                         <tr>

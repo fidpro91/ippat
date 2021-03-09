@@ -92,8 +92,8 @@
                       <select name="jabatan" id="jabatan" class="form-control" required="true">
                           <option value="">Pilih</option>
                           <option>NOTARIS</option>
-                          <option>IPPAT</option>
-                          <option>NOTARIS & IPPAT</option>
+                          <option>PPAT</option>
+                          <option>NOTARIS & PPAT</option>
                       </select>
                   </div>
             </div>
@@ -293,11 +293,11 @@
           $("#notaris").show();
           $("#pengda_notaris").attr('required',true);
           $("#ippat").hide();
-        }else if($(this).val() == 'IPPAT') {
+        }else if($(this).val() == 'PPAT') {
           $("#notaris").hide();
           $("#ippat").show();
           $("#pengda_ippat").attr('required',true);
-        }else if($(this).val() == 'NOTARIS & IPPAT') {
+        }else if($(this).val() == 'NOTARIS & PPAT') {
           $("#notaris").show();
           $("#ippat").show();
           $("#pengda_notaris").attr('required',true);

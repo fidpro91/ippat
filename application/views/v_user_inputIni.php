@@ -22,6 +22,12 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+<style type="text/css">
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
 <body class="hold-transition register-page">
 <div class="register-box" style="width: 50% !important">
   <div class="register-logo">
@@ -29,8 +35,26 @@
   </div>
 
   <div class="card">
-    <div class="card-body ">
-      <p class="login-box-msg">Register Anggota Ini</p>
+    <div class="card-body">
+      <table width="100%">
+        <tr>
+          <td width="10%" class="text-center">
+            <img src="<?=base_url('assets/images/logo1.jpeg')?>" class="responsive"><img src="">
+          </td>
+          <td class="text-center" width="70%">
+            <h5>FORM DATA ANGGOTA
+PENGURUS WILAYAH JAWA TIMUR IKATAN NOTARIS INDONESIA(INI)
+DAN
+PEJABAT PEMBUAT AKTA TANAH(IPPAT)</h5>
+          </td>
+          <td width="10%" class="text-center">
+            <img src="<?=base_url('assets/images/logo2.jpeg')?>" class="responsive"><img src="">
+          </td>
+        </tr>
+      </table>
+      <hr style="border-top: 3px double #8c8b8b !important;">
+    </div>
+    <div class="card-body">
       <?php
           if ($this->session->flashdata('message')) {
               echo '<div class="alert alert-danger">

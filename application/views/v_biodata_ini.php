@@ -454,7 +454,20 @@
         $("#modal-lg").modal('show');
         $('#viewData > tbody > tr').remove();
         $.each(data,function(ind,obj){
-          $('#viewData > tbody').append("<tr><td>"+ind+"</td><td>:</td><td>"+obj+"</td></tr>");
+          if (ind != 'bio_id') {
+            if ((ind.includes('upload_sk') == true || ind.includes('upload_ba') == true)) {
+                if (obj != null) {
+                  $('#viewData > tbody').append("<tr><td>"+ind+"</td><td>:</td><td><a href='<?=base_url('assets/uploads/ini/')?>"+obj+"' download>Download</a></td></tr>");  
+                }else{
+                  $('#viewData > tbody').append("<tr><td>"+ind+"</td><td>:</td><td>"+obj+"</td></tr>");
+                }
+            }else{
+              if ((ind.includes('tanggal') || ind.includes('tgl')) && obj != null) {
+                obj = obj.split("-").reverse().join("-");
+              }
+                $('#viewData > tbody').append("<tr><td>"+ind+"</td><td>:</td><td>"+obj+"</td></tr>");  
+            }
+          }
         });
         $("#btnEdit").attr("onclick",'set_val('+data.bio_id+')');
     },'json');

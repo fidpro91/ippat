@@ -35,7 +35,7 @@
     <div class="card-body">
         <?php
             if (($this->session->flashdata('message'))) {
-              echo '<div class="alert alert-danger">
+              echo '<div class="alert alert-info">
                 <span>'.$this->session->flashdata('message').'
                 </span>
               </div>';

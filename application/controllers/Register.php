@@ -32,7 +32,7 @@ class Register extends CI_Controller {
         }
         $this->db->insert('biodata_ini',$data);
         if ($this->db->Insert_id()) {
-    		$this->session->set_flashdata('message','Data berhasil disimpan');
+    		$this->session->set_flashdata('message','<i class="icon fa fa-check"></i><h3>Selamat Data berhasil disimpan!</h3>');
     		redirect('register/message');
         }else{
             $err = $this->db->error();

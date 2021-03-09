@@ -282,7 +282,7 @@
     bsCustomFileInput.init();
     //Date range picker
     $('#tanggalLahir, #tanggalBaNotaris, #tanggalSKIppat, #tanggalBaIppat, #tanggalSKnotaris').datetimepicker({
-        format: 'YYYY-MM-DD'
+        format: 'DD-MM-YYYY'
     });
 
     $("#jabatan").change(function(){

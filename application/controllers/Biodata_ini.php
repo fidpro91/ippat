@@ -23,6 +23,11 @@ class Biodata_ini extends MY_Admin {
             $data['email'.($key+1)] = $value;
         }
         unset($data['email']);
+        foreach ($data as $key => $value) {
+            if (strpos($key, 'tanggal') !== false || strpos($key, 'tgl') !== false) {
+                $data[$key] = date('Y-m-d',strtotime($value));
+            }
+        }
         if ($_FILES['upload_sk_notaris']['name']) {
             $data['upload_sk_notaris'] = $this->upload_data('upload_sk_notaris','SK_NOTARIS_'.$data['no_sk_notaris']);
         }

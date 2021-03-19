@@ -60,10 +60,6 @@
                                 <input type="text" class="form-control" name="no_hp" id="no_hp">
                                 </div>
                                 <div class="form-group">
-                                <label for="pemegang_protokolnotaris">pemegang protokolnotaris</label>
-                                <input type="text" class="form-control" name="pemegang_protokolnotaris" id="pemegang_protokolnotaris">
-                                </div>
-                                <div class="form-group">
                                 <label for="tempat_lahir">tempat lahir</label>
                                 <input type="text" class="form-control" name="tempat_lahir" id="tempat_lahir">
                                 </div>
@@ -158,6 +154,12 @@
                                               </div>
                                               </div>
                                           </div>
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                            <label for="pemegang_protokolnotaris">pemegang protokolnotaris</label>
+                                            <input type="text" class="form-control" name="pemegang_protokolnotaris" id="pemegang_protokolnotaris">
+                                            </div>
+                                          </div>
                                       </div>
                                   </div>
                                   <!-- /.card-body -->
@@ -232,6 +234,12 @@
                                                 </div>
                                               </div>
                                               </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                            <label for="pemegang_protokolnotaris">pemegang protokolPPAT</label>
+                                            <input type="text" class="form-control" name="pemegang_protokolppat" id="pemegang_protokolppat">
+                                            </div>
                                           </div>
                                       </div>
                                   </div>

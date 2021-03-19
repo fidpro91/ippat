@@ -9,6 +9,8 @@ application/logs/*
 !application/*/.htaccess
 
 composer.lock
+ippat.sublime-project
+ippat.sublime-workspace
 application/config/database.php
 
 user_guide_src/build/*

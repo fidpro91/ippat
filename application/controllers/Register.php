@@ -7,7 +7,7 @@ class Register extends CI_Controller {
 		$this->load->model('m_biodata_ini');
 		$data['pengdaNotaris'] = $this->m_biodata_ini->get_pengda('f');
         $data['pengdaIppat'] = $this->m_biodata_ini->get_pengda('t');
-		$this->load->view('v_user_inputIni',$data);
+		$this->load->view('v_register',$data);
 	}
 
 	public function save()
@@ -18,6 +18,7 @@ class Register extends CI_Controller {
         }
         unset($data['email']);
         unset($data['btnsave']);
+        unset($data['finish']);
         foreach ($data as $key => $value) {
             if (strpos($key, 'tanggal') !== false || strpos($key, 'tgl') !== false) {
                 $data[$key] = date('Y-m-d',strtotime($value));

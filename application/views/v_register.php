@@ -4,8 +4,8 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="apple-touch-icon" sizes="76x76" href="<?=base_url()?>frontend/img/apple-icon.png" />
-	<link rel="icon" type="image/png" href="<?=base_url()?>frontend/img/favicon.png" />
-	<title>Material Bootstrap Wizard by Creative Tim | Free Boostrap Wizard</title>
+	<link rel="icon" type="image/png" href="<?=base_url()?>frontend/img/logo-ini-ippat.png" />
+	<title>FORM DATA ANGGOTA IPPAT | Pendaftaran</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -62,13 +62,10 @@
 		                        	<table width="100%">
 								        <tr>
 								          <td width="10%" class="text-center">
-								            <img src="<?=base_url('assets/images/logo1.jpeg')?>" class="logo" style="width: 100%">
+								            <img src="<?=base_url('assets/images/logo1.png')?>" class="logo" style="width: 100%">
 								          </td>
 								          <td class="text-center" width="70%">
-								            <h5 style="font-size:1.25vw !important;">FORM DATA ANGGOTA
-								PENGURUS WILAYAH JAWA TIMUR IKATAN NOTARIS INDONESIA(INI)
-								DAN
-								PEJABAT PEMBUAT AKTA TANAH(IPPAT)</h5>
+								            <h5 style="font-size:1.5vw !important;">FORM DATA NOTARIS DAN PPAT JAWA TIMUR</h5>
 								          </td>
 								          <td width="10%" class="text-center">
 								            <img src="<?=base_url('assets/images/logo2.jpeg')?>" class="logo" style="width: 100%">
@@ -337,7 +334,7 @@
 		                                    	<figure class="info-text">
 			                                        <img src="<?=base_url()?>frontend/img/success.jpg" style="width: 50%" alt="">
 			                                    </figure>
-		                                        <p class="info-text">Anda telah melengkapi formulir. <br>Klik <strong>DAFTAR</strong> untuk melanjutkan pendaftaran <br>atau klik KEMBALI untuk memeriksa data anda</p>
+		                                        <p class="info-text">Anda telah melengkapi formulir. Jika Anda telah melengkapi form<br>Klik <strong>SIMPAN</strong> untuk melanjutkan pengisian <br>atau klik KEMBALI untuk memeriksa data anda</p>
 		                                    </div>
 		                                </div>
 		                            </div>
@@ -345,7 +342,7 @@
 		                        <div class="wizard-footer">
 		                            <div class="pull-right">
 		                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-		                                <input type='submit' class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Daftar' />
+		                                <input type='submit' class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Simpan' />
 		                            </div>
 		                            <div class="pull-left">
 		                                <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Kembali' />
